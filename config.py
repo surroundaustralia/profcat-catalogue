@@ -6,7 +6,7 @@ APP_DIR = os.environ.get("APP_DIR", os.path.dirname(os.path.realpath(__file__)))
 TEMPLATES_DIR = os.environ.get("TEMPLATES_DIR", os.path.join(APP_DIR, "view", "templates"))
 STATIC_DIR = os.environ.get("STATIC_DIR", os.path.join(APP_DIR, "view", "style"))
 LOGFILE = os.environ.get("LOGFILE", os.path.join(APP_DIR, "catprez.log"))
-DEBUG = False
+DEBUG = True
 PORT = os.environ.get("PORT", 5000)
 CACHE_HOURS = os.environ.get("CACHE_HOURS", 1)
 CACHE_FILE_PATH = os.environ.get("CACHE_DIR", os.path.join(APP_DIR, "cache", "DATA.pickle"))
@@ -44,15 +44,14 @@ CLASS_RENDERER = {
 
 class DataSourceTypes:
     FILE = FILE
-    SPARQL = SPARQL
 
 
 DATA_SOURCES = [
     {
         "name": "Local Files",
         "source": DataSourceTypes.FILE,
-        "data_folder": "CP_DATA_DIR",
+        "data_folder": "/Users/nick/Work/surround/catprez-overlay-profcat/data",
         "cache_age": CACHE_HOURS * 3600
     }
 ]
-CATALOGUE_URI = "https://w3id.org/dggs/cat"
+CATALOGUE_URI = "https://w3id.org/profile"

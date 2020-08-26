@@ -16,17 +16,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:publisher <https://surroundaustralia.com>  ;
     dcterms:description "A DCAT2-compatable Dataset containing a catalogue of profiles defined according to the Profiles Vocabulary."@en ;
     dcat:distribution
-        <https://w3id.org/dggs/profile.ttl> ,
+        <https://w3id.org/profile.ttl> ,
         <https://w3id.org/profile/sparql> ,
         <https://w3id.org/profile/> ;
 .
 
-<https://w3id.org/dggs/profile.ttl>
+<https://w3id.org/profile.ttl>
     a dcat:Distribution ;
     dcterms:type <https://schema.org/DigitalDocument> ;
     dcterms:title "Profiles Catalogue RDF"@en ;
     dcterms:description "The entire DGGS Catalogue as a single RDF file"@en ;
-    dcat:accessURL <https://w3id.org/dggs/cat.ttl> ;
+    dcat:accessURL <https://w3id.org/profile.ttl> ;
     dcat:mediaType <https://w3id.org/mediatype/text/turtle> ;
 .
 
@@ -35,8 +35,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:type <http://purl.org/dc/dcmitype/Service> ;
     dcterms:title "Profiles Catalogue SPARQL Service"@en ;
     dcterms:dcterms:conformsTo <https://www.w3.org/TR/sparql11-service-description/> ;
-    sd:endpoint <https://w3id.org/dggs/sparql> ;
-    dcat:servesDataset <https://w3id.org/dggs/cat> ;
+    sd:endpoint <https://w3id.org/profile/sparql> ;
+    dcat:servesDataset <https://w3id.org/profile> ;
     dcterms:description "A SPARQL service providing access to all the content of the W3ID Profiles Catalogue." ;
 .
 
@@ -45,7 +45,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:type <http://purl.org/dc/dcmitype/Service> ;
     dcterms:title "Profiles Catalogue Linked Data API"@en ;
     dcterms:dcterms:conformsTo <https://www.ietf.org/rfc/rfc2616.html> ;
-    sd:endpoint <https://w3id.org/dggs/sparql> ;
-    dcat:servesDataset <https://w3id.org/dggs/cat> ;
+    sd:endpoint <https://w3id.org/profile/> ;
+    dcat:servesDataset <https://w3id.org/profile> ;
     dcterms:description "A Linked Data API providing access to all the content of the W3ID Profiles Catalogue. The API is formulated according to pyLDAPI (https://github.com/rdflib/pyLDAPI)." ;
 .
