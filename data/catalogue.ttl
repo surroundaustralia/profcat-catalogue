@@ -1,0 +1,14 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://w3id.org/profile>
+    a dcat:Catalog ;
+    dcterms:hasPart
+      <https://w3id.org/profile> ,
+      <https://w3id.org/profile/vocpub> ,
+      <https://linked.data.gov.au/def/agop> ;
+.

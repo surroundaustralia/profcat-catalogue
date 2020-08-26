@@ -1,0 +1,40 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/def/agop>
+  a dcat:Resource ;
+  dcterms:identifier "vocpub" ;
+  dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
+  dcterms:title "Australian Government Ontologies Profile"@en ;
+  dcterms:description "An profile for the publication of ontologies mandated by the Australian Government Linked Data Working Group to ensure ontologies contain sufficinet metadata for cataloguing. Unofficial as of August, 2020." ;
+  dcterms:creator <https://surroundaustralia.com> ;
+  dcterms:created "2020-06-25"^^xsd:date ;
+  dcterms:modified "2020-08-25"^^xsd:date ;
+  dcterms:publisher <https://surroundaustralia.com>  ;
+  sdo:codeRepository <https://github.com/agldwg/agop> ;
+  dcat:distribution
+    <https://linked.data.gov.au/def/agop.html> ,
+    <https://linked.data.gov.au/def/agop.ttl>
+.
+
+
+<https://linked.data.gov.au/def/agop.html>
+  a dcat:Distribution ;
+  dcterms:type <https://schema.org/DigitalDocument> ;
+  dcterms:title "Profile online in HTML" ;
+  dcterms:description "The profile's main page, in HTML format" ;
+  dcterms:format <https://w3id.org/mediatype/text/html> ;
+.
+
+
+<https://linked.data.gov.au/def/agop.ttl>
+  a dcat:Distribution ;
+  dcterms:type <https://schema.org/DigitalDocument> ;
+  dcterms:title "Profile online in RDF" ;
+  dcterms:description "The profile, in RDF, Turtle format" ;
+  dcterms:format <https://w3id.org/mediatype/text/turtle> ;
+.
+

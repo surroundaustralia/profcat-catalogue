@@ -1,0 +1,8 @@
+# JetBrains
+.idea/
+
+# Mac
+.DS_Store
+
+# specific config
+ENV_VARS.sh

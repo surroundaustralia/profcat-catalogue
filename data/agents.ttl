@@ -1,0 +1,59 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sdo: <https://schema.org/>
+
+
+<https://orcid.org/0000-0002-8742-7730>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:affiliation <https://surroundaustralia.com> ;
+  sdo:name "Nicholas J. Car" ;
+  sdo:honorificPrefix "Dr" ;
+  sdo:jobTitle "Data Systems Architect" ;
+  sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+.
+
+<https://surroundaustralia.com>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:name "SURROUND Australia Pty Ltd" ;
+  sdo:url <https://surroundaustralia.com> ;
+.
+
+<https://linked.data.gov.au/org/ga>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:name "Geoscience Australia" ;
+  sdo:url <https://www.ga.gov.au> ;
+.
+
+<https://linked.data.gov.au/org/csiro>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:name "CSIRO" ;
+  sdo:url <https://www.csiro.au> ;
+.
+
+<mailto:david.hapgood@surroundaustralia.com>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:affiliation <https://surroundaustralia.com> ;
+  sdo:name "David Habgood" ;
+  sdo:jobTitle "Analyst Programmer" ;
+  sdo:email <mailto:david.hapgood@surroundaustralia.com> ;
+.
+
+<https://orcid.org/0000-0002-7878-2693>
+  a owl:NamedIndividual ;
+  a sdo:Person ;
+  sdo:affiliation <https://www.ogc.com> ;
+  sdo:name "Rob Atkinson" ;
+  sdo:jobTitle "Senior Research Engineer" ;
+  sdo:email <mailto:ratkinson@ogc.org> ;
+.
+
+<https://www.ogc.org>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:name "Open Geospatial Consortium" ;
+  sdo:url <https://www.ogc.org> ;
+.
