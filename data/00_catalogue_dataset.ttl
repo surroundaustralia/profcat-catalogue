@@ -14,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:created "2020-08-25"^^xsd:date ;
     dcterms:modified "2020-08-25"^^xsd:date ;
     dcterms:publisher <https://surroundaustralia.com>  ;
-    dcterms:description "A DCAT2-compatable Dataset containing a catalogue of profiles defined according to the Profiles Vocabulary."@en ;
+    dcterms:description "A DCAT2-compatable Dataset containing a catalogue of Profiles defined according to the Profiles Vocabulary. Also included are Standards (specifications) defined by the Dubline Core Terms vocabulary."@en ;
     dcat:distribution
         <https://w3id.org/profile.ttl> ,
         <https://w3id.org/profile/sparql> ,
@@ -25,7 +25,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a dcat:Distribution ;
     dcterms:type <https://schema.org/DigitalDocument> ;
     dcterms:title "Profiles Catalogue RDF"@en ;
-    dcterms:description "The entire DGGS Catalogue as a single RDF file"@en ;
+    dcterms:description "The entire Profiles Catalogue as a single RDF file"@en ;
     dcat:accessURL <https://w3id.org/profile.ttl> ;
     dcat:mediaType <https://w3id.org/mediatype/text/turtle> ;
 .
