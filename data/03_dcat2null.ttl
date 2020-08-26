@@ -4,24 +4,24 @@ PREFIX sdo: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-<https://w3id.org/profile/dcatnull>
+<https://w3id.org/profile/dcat2null>
   a dcat:Resource ;
-  dcterms:identifier "dcatnull" ;
+  dcterms:identifier "dcat2null" ;
   dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
   dcterms:title "Null Profile of DCAT2"@en ;
-  dcterms:description "An profile of DCAT2 that imposes no restrictions - this is a null profile" ;
+  dcterms:description "An profile of DCAT2 that imposes no restrictions - this is a null profile that can be used to validate if data claiming conformance to DCAT2 really is conformant" ;
   dcterms:creator <https://surroundaustralia.com> ;
   dcterms:created "2020-08-26"^^xsd:date ;
   dcterms:modified "2020-08-26"^^xsd:date ;
   dcterms:publisher <https://surroundaustralia.com>  ;
-  sdo:codeRepository <https://github.com/surroundaustralia/catprez-overlay-profcat> ;
+  sdo:codeRepository <https://github.com/surroundaustralia/dcat2-null-profile> ;
   dcat:distribution
-    <https://w3id.org/profile/vocpub.html> ,
-    <https://w3id.org/profile/vocpub.ttl>
+    <https://w3id.org/profile/dcat2null.html> ,
+    <https://w3id.org/profile/dcat2null.ttl>
 .
 
 
-<https://w3id.org/profile/vocpub.html>
+<https://w3id.org/profile/dcat2null.html>
   a dcat:Distribution ;
   dcterms:type <https://schema.org/DigitalDocument> ;
   dcterms:title "Profile online in HTML" ;
@@ -30,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 
-<https://w3id.org/profile/vocpub.ttl>
+<https://w3id.org/profile/dcat2null.ttl>
   a dcat:Distribution ;
   dcterms:type <https://schema.org/DigitalDocument> ;
   dcterms:title "Profile online in RDF" ;

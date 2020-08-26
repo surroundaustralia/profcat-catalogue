@@ -1,7 +1,12 @@
-# DGGS Catalogue Overlay
+# Profiles Catalogue Overlay
 This repository contains [DCAT2](https://www.w3.org/TR/vocab-dcat/) -compatible catalogue data and some styling overlays to be added to a *CatPrez* instance for online delivery. CatPrez is a Linked Data cataloguing application. 
 
 See [SURROUND Australia's Open Source Software page](https://surroundaustralia.com/os) for more information about the CatPrez tool.
+
+This repository's content is online at:
+
+* <https://w3id.org/profile> - the *W3ID Profiles Catalogue*
+
 
 ## License
 All the content in this repository is licensed under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Basically, you can:

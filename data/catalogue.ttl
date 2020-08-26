@@ -8,7 +8,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://w3id.org/profile>
     a dcat:Catalog ;
     dcterms:hasPart
-      <https://w3id.org/profile> ,
-      <https://w3id.org/profile/vocpub> ,
-      <https://linked.data.gov.au/def/agop> ;
+        <https://w3id.org/profile> ,
+        <https://w3id.org/profile/vocpub> ,
+        <https://linked.data.gov.au/def/agop> ,
+        <https://w3id.org/profile/dcat2null> ,
+        <https://w3id.org/profile/skosnull> ,
+        <https://w3id.org/profile/ontdoc> ,
+        <https://www.w3.org/TR/dx-prof/> ,
+        <https://www.w3.org/TR/2014/REC-vocab-dcat-20140116/> ,
+        <https://www.w3.org/TR/vocab-dcat/> ;
 .

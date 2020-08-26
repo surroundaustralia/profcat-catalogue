@@ -57,3 +57,18 @@ PREFIX sdo: <https://schema.org/>
   sdo:name "Open Geospatial Consortium" ;
   sdo:url <https://www.ogc.org> ;
 .
+
+<https://www.w3.org>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:name "World Wide Web Consortium" ;
+  sdo:url <https://www.w3.org> ;
+.
+
+<https://github.com/w3c/dxwg/>
+  a owl:NamedIndividual ;
+  a sdo:Organization ;
+  sdo:affiliation <https://www.w3.org> ;
+  sdo:name "Dataset Exchange Working Group (DXWG)" ;
+  sdo:url <https://github.com/w3c/dxwg/> ;
+.

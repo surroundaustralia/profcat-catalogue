@@ -1,0 +1,17 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://www.w3.org/TR/2014/REC-vocab-dcat-20140116/>
+  a dcat:Resource ;
+  dcterms:identifier "dcat1" ;
+  dcterms:type <http://purl.org/dc/terms/Standard> ;
+  dcterms:title "Data Catalog Vocabulary (DCAT)"@en ;
+  dcterms:description "DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web" ;
+  dcterms:creator <https://www.w3.org> ;
+  dcterms:created "2019-02-15"^^xsd:date ;
+  dcterms:modified "2014-01-16"^^xsd:date ;
+  dcterms:publisher <https://www.w3.org>  ;
+.
