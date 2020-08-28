@@ -16,8 +16,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dcterms:publisher <https://www.w3.org>  ;
   sdo:codeRepository <https://github.com/w3c/dx-prof> ;
   dcat:distribution
-    <https://w3c.github.io/dx-prof/> ,
-    <https://www.w3.org/TR/dx-prof/rdf/prof.ttl>
+    <https://w3c.github.io/dxwg/dcat/> ,
+    <https://www.w3.org/ns/dcat.ttl>
 .
 
 

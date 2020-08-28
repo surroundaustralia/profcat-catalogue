@@ -12,6 +12,7 @@ CACHE_HOURS = os.environ.get("CACHE_HOURS", 1)
 CACHE_FILE_PATH = os.environ.get("CACHE_DIR", os.path.join(APP_DIR, "cache", "DATA.pickle"))
 LOCAL_URIS = os.environ.get("LOCAL_URIS", True)
 CLASS_RENDERERING_PREFERENCE_ORDER = [
+    "http://www.w3.org/ns/dx/prof/Profile",
     "http://www.w3.org/ns/dcat#Catalog",
     "http://www.w3.org/ns/dcat#Dataset",
     "http://www.w3.org/ns/dcat#DataService",
@@ -22,11 +23,14 @@ CLASS_RENDERERING_PREFERENCE_ORDER = [
     "http://www.w3.org/2004/02/skos/core#ConceptScheme",
     "http://purl.org/dc/terms/Standard",
     "http://www.w3.org/ns/dcat#Distribution",
+    "https://schema.org/DigitalDocument",
     "https://schema.org/Person",
     "https://schema.org/Organization",
     "http://www.w3.org/2002/07/owl#NamedIndividual",
 ]
 CLASS_RENDERER = {
+    "https://schema.org/DigitalDocument": ResourceRenderer,
+    "http://www.w3.org/ns/dx/prof/Profile": ResourceRenderer,
     "http://www.w3.org/ns/dcat#Catalog": CatalogueRenderer,
     "http://www.w3.org/ns/dcat#Dataset": ResourceRenderer,
     "http://www.w3.org/ns/dcat#DataService": DataServiceRenderer,
