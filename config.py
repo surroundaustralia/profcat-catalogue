@@ -54,8 +54,53 @@ DATA_SOURCES = [
     {
         "name": "Local Files",
         "source": DataSourceTypes.FILE,
-        "data_folder": "CP_DATA_DIR",
+        "data_folder": "/Users/nick/Work/surround/catprez-overlay-profcat/data",
         "cache_age": CACHE_HOURS * 3600
     }
 ]
 CATALOGUE_URI = "https://w3id.org/profile"
+
+MANAGED_URIS = {
+    "https://w3id.org/profile/dcat2null": [
+        {
+            "label": "Specification Resource",
+            "from": "https://w3id.org/profile/dcat2null/specification",
+            "to": "https://github.com/surroundaustralia/dcat2-null-profile/blob/master/specification.md",
+        },
+        {
+            "label": "Validation Resource",
+            "from": "https://w3id.org/profile/dcat2null/validation",
+            "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/validaton.ttl",
+        },
+        {
+            "label": "DCAT2 Specification Resource",
+            "from": "https://w3id.org/profile/dcat2null/dcat2",
+            "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/dcat2.ttl",
+        },
+        {
+            "label": "Data Expanders Resource",
+            "from": "https://w3id.org/profile/dcat2null/dataexpanders",
+            "to": "https://github.com/surroundaustralia/dcat2-null-profile/tree/master/dataexpanders",
+        },
+        {
+            "label": "Redirects Resource",
+            "from": "https://w3id.org/profile/dcat2null/redirects",
+            "to": "https://github.com/surroundaustralia/dcat2-null-profile/tree/master/redirects.txt",
+        },
+        {
+            "label": "Profile RDF (turtle) via file ext.",
+            "from": "https://w3id.org/profile/dcat2null.ttl",
+            "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/profile.ttl",
+        },
+        {
+            "label": "Profile RDF (turtle) via QSA",
+            "from": "https://w3id.org/profile/dcat2null?_mediatype=text/turtle",
+            "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/profile.ttl",
+        },
+        {
+            "label": "Profile HTML",
+            "from": "https://w3id.org/profile/dcat2null.html",
+            "to": "https://github.com/surroundaustralia/dcat2-null-profile/blob/master/profile.md",
+        },
+    ],
+}
