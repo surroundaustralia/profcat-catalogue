@@ -93,11 +93,6 @@ MANAGED_URIS = {
             "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/profile.ttl",
         },
         {
-            "label": "Profile RDF (turtle) via QSA",
-            "from": "https://w3id.org/profile/dcat2null?_mediatype=text/turtle",
-            "to": "https://raw.githack.com/surroundaustralia/dcat2-null-profile/master/profile.ttl",
-        },
-        {
             "label": "Profile HTML",
             "from": "https://w3id.org/profile/dcat2null.html",
             "to": "https://github.com/surroundaustralia/dcat2-null-profile/blob/master/profile.md",
