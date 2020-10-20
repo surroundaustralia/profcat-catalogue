@@ -14,7 +14,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:created "2020-08-25"^^xsd:date ;
     dcterms:modified "2020-08-25"^^xsd:date ;
     dcterms:publisher <https://surroundaustralia.com>  ;
-    dcterms:description "A DCAT2-compatable Dataset containing a catalogue of Profiles defined according to the Profiles Vocabulary. Also included are Standards (specifications) defined by the Dubline Core Terms vocabulary."@en ;
+    dcterms:description """A catalogue of Profiles defined according to the Profiles Vocabulary. Also included are Standards (specifications) defined by the Dublin Core Terms vocabulary.
+
+As a whole, this catalogue presents as a DCAT Dataset therefor this ways in which it is accessible are described as Distributions.
+
+When viewed as a *catalogue*, this catalogue lists the parts within it."""@en ;
     dcat:distribution
         <https://w3id.org/profile.ttl> ,
         <https://w3id.org/profile/sparql> ,
@@ -35,7 +39,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:type <http://purl.org/dc/dcmitype/Service> ;
     dcterms:title "Profiles Catalogue SPARQL Service"@en ;
     dcterms:dcterms:conformsTo <https://www.w3.org/TR/sparql11-service-description/> ;
-    sd:endpoint <https://w3id.org/profile/sparql> ;
+    sd:endpoint <https://profcat.conneg.info/sparql> ;
     dcat:servesDataset <https://w3id.org/profile> ;
     dcterms:description "A SPARQL service providing access to all the content of the W3ID Profiles Catalogue." ;
 .
