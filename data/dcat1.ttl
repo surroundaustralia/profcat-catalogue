@@ -1,0 +1,21 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.w3.org/TR/2014/REC-vocab-dcat-20140116/>
+    a prof:Profile ;
+    dcterms:identifier "dcat1" ;
+    dcterms:title "DCAT, 2014"@en ;
+    dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
+    dcterms:creator <https://www.w3.org> ;
+    dcterms:created "2019-02-15"^^xsd:date ;
+    dcterms:modified "2014-01-16"^^xsd:date ;
+    dcterms:publisher <https://www.w3.org> ;
+    prof:isProfileOf <https://www.w3.org/TR/vocab-dcat/> ;
+.
+
+

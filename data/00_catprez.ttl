@@ -1,0 +1,18 @@
+PREFIX catprez: <https://w3id.org/profile/catprez/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sdo: <https://schema.org/>
+
+
+<https://w3id.org/profile>
+    a catprez:CatPrez ;
+    dcat:servedBy <http://localhost:5000> ;
+    dcterms:title "W3ID Profiles Catalogue"@en ;
+    dcterms:description """A catalogue of Profiles defined according to the Profiles Vocabulary. Also included are Standards (specifications) defined by the Dublin Core Terms vocabulary.
+
+As a whole, this catalogue presents as a DCAT Dataset therefor this ways in which it is accessible are described as Distributions.
+
+When viewed as a *catalogue*, this catalogue lists the parts within it."""@en ;
+    sdo:codeRepository <https://github.com/surroundaustralia/catprez-overlay-profcat> ;
+    dcterms:publisher <https://surroundaustralia.com>  ;
+.

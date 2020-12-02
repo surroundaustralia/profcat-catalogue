@@ -1,0 +1,16 @@
+PREFIX cprt: <https://w3id.org/profile/catprez/resourcetypes/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+<http://www.w3.org/ns/dx/prof/Profile>
+    a skos:Concept ;
+    rdfs:isDefinedBy cprt: ;
+    skos:prefLabel "Profile"@en ;
+    skos:definition """ A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specifications.
+
+This definition includes what are sometimes called "application profiles", "metadata application profiles", or "metadata profiles"."""@en ;
+    skos:inScheme cprt: ;
+    skos:topConceptOf cprt: ;
+    cprt:renderer "ProfileRenderer" ;
+.

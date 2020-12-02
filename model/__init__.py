@@ -1,5 +1,7 @@
+from .catprez import CatPrezRenderer
 from .catalogue import CatalogueRenderer
 from .resource import ResourceRenderer
+from .dataset import DatasetRenderer
 from .dataservice import DataServiceRenderer
 from .distribution import DistributionRenderer
 from .agent import AgentRenderer

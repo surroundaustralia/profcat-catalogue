@@ -8,6 +8,7 @@
 
 <https://w3id.org/profile/dcat2null>
     a prof:Profile ;
+    dcterms:identifier "dcat2null" ;
     dcterms:created "2020-08-26"^^xsd:date ;
     dcterms:creator <https://surroundaustralia.com> ;
     dcterms:modified "2020-08-26"^^xsd:date ;
@@ -31,7 +32,7 @@
     [
         dcterms:title "Profile code repository"@en ;
         dcterms:description "Code repository storing all Profile artifacts"@en ;
-        prof:hasArtifact <https://github.com/surroundaustralia/dcat2-null-profile> ;
+        prof:hasArtifact <https://github.com/surroundaustralia/dcat2null-profile> ;
         prof:hasRole role:repository ;
     ] ,
     [

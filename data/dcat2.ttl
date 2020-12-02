@@ -1,0 +1,40 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.w3.org/TR/vocab-dcat/>
+    a prof:Profile ;
+    dcterms:identifier "dcat2" ;
+    dcterms:title "DCAT, 2018"@en ;
+    dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
+    dcterms:creator <https://www.w3.org> ;
+    dcterms:created "2019-02-15"^^xsd:date ;
+    dcterms:modified "2020-02-04"^^xsd:date ;
+    dcterms:publisher <https://www.w3.org> ;
+    prof:hasResource
+        <https://w3c.github.io/dxwg/dcat/> ,
+        <https://www.w3.org/ns/dcat.ttl> ;
+.
+
+<https://w3c.github.io/dxwg/dcat/>
+    a prof:ResourceDescriptor ;
+    dcterms:type <https://schema.org/DigitalDocument> ;
+    dcterms:title "Specification HTML" ;
+    dcterms:description "The ontology's main page, in HTML format" ;
+    dcterms:format <https://w3id.org/mediatype/text/html> ;
+    prof:hasArtifact <https://w3c.github.io/dxwg/dcat/> ;
+.
+
+
+<https://www.w3.org/ns/dcat.ttl>
+    a prof:ResourceDescriptor ;
+    dcterms:type <https://schema.org/DigitalDocument> ;
+    dcterms:title "Ontology online in RDF" ;
+    dcterms:description "The profile, in RDF, Turtle format" ;
+    dcterms:format <https://w3id.org/mediatype/text/turtle> ;
+    prof:hasArtifact <https://www.w3.org/ns/dcat.ttl> ;
+.

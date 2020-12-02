@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://w3id.org/profile/vocpub>
+    a prof:Profile ;
+    dcterms:identifier "vocpub" ;
+    dcterms:created "2020-06-25"^^xsd:date ;
+    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:modified "2020-06-25"^^xsd:date ;
+    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:title "Vocabulary Publications Profile"@en ;
+    dcterms:description "A profile of SKOS for the publication of Vocabularies. This profile mandates the use of one Concept Scheme per vocabulary" ;
+    prof:hasResource [
+        dcterms:title "Profile code repository"@en ;
+        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        prof:hasArtifact <https://github.com/surroundaustralia/vocpub-profile> ;
+        prof:hasRole role:repository ;
+    ] ,
+    [
+        dcterms:title "Validator in SHACL"@en ;
+        dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
+        dcterms:format "text/turtle" ;
+        prof:hasArtifact <https://raw.githubusercontent.com/surroundaustralia/vocpub-profile/master/validator.ttl> ;
+        prof:hasRole role:validation ;
+    ] ;
+.
+
+

@@ -1,0 +1,54 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX role: <http://www.w3.org/ns/dx/prof/role/>
+PREFIX sdo: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://linked.data.gov.au/def/agop>
+    a prof:Profile ;
+    dcterms:identifier "agop" ;
+    dcterms:title "Australian Government Ontology Profile"@en ;
+    dcterms:description "A profile of OWL for the purposes of Australian Government ontology documentation and alignment."@en ;
+    prof:isProfileOf <https://www.w3.org/TR/owl2-rdf-based-semantics/> ;  # OWL
+    dcterms:creator <http://linked.data.gov.au/org/agldwg> ;  # Aust Gov LD WG
+    dcterms:publisher <http://linked.data.gov.au/org/agldwg> ;  # Aust Gov LD WG
+    dcterms:created "2020-05-01"^^xsd:date ;
+    dcterms:modified "2020-05-07"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Australian Government, 2020" ;
+    prof:hasResource [
+        rdfs:label "SHACL validator file" ;
+        prof:hasRole role:validation ;
+        prof:hasArtifact <http://linked.data.gov.au/def/agop/validator.shacl.ttl> ;
+        dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;  # SHACL
+        dcterms:format "text/turtle" ;
+    ] ,
+    [
+        rdfs:label "Human-readable guidance" ;
+        prof:hasRole role:guidance ;
+        prof:hasArtifact <http://linked.data.gov.au/def/agop> ;
+        dcterms:conformsTo <https://html.spec.whatwg.org/> ;  # HTML5
+        dcterms:format "text/html" ;
+    ] ,
+    [
+        rdfs:label "Machine-readable specification" ;
+        prof:hasRole role:specification ;
+        prof:hasArtifact <http://linked.data.gov.au/def/agop.ttl> ;
+        dcterms:conformsTo <http://www.w3.org/ns/dx/prof/> ;
+        dcterms:format "text/turtle" ;
+    ] ,
+    [
+        dcterms:title "Profile code repository"@en ;
+        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        prof:hasArtifact <https://github.com/AGLDWG/agop/> ;
+        prof:hasRole role:repository ;
+    ] ;
+.
+
+<http://linked.data.gov.au/org/agldwg>
+    a sdo:GovernmentOrganization ;
+    sdo:name "Australian Government Linked Data Working Group" ;
+    sdo:url <http://www.linked.data.gov.au> ;
+.
+

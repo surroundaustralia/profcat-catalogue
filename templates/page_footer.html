@@ -1,20 +1,18 @@
-<div style="display: grid; grid-template-columns: 75% 25%;">
-  <div style="grid-column: 1">
-    <p>
-      This catalogue is using <a href="http://surroundaustralia.com/catprez">CatPrez</a>, version {{ utils.version() }}, a Linked Data API system based on the <a href="https://rdflib.dev">RDFlib</a> family of tools, particularly <a href="https://github.com/rdflib/pyLDAPI">pyLDAPI</a>.<br />
-    </p>
-    <p>
-      If you like what you see, be sure to check out <a href="https://github.com/RDFLib/VocPrez/">VocPrez</a> for vocabularies.
-    </p>
-  </div>
-  <div style="grid-column: 2">
-    <p>
-      This catalogue is maintained by:<br />
-      <a href="https://surroundaustralia.com" style="font-family: sans-serif; text-decoration: none; font-weight: bold; color:#333;">
-        <img style="float:left; margin-right: 10px;" src="{{ url_for('static', filename='surround-logo-catprez.png') }}" alt="CatPrez Logo" />
-        SURROUND<br />
-        Australia
-      </a>
-    </p>
-  </div>
+<div style="grid-column: 2">
+  <p>
+    This catalogue is using <a href="http://surroundaustralia.com/catprez">CatPrez</a>, version {{ utils.version() }}, a Linked Data API system based on the <a href="https://rdflib.dev">RDFlib</a> family of tools, particularly <a href="https://github.com/rdflib/pyLDAPI">pyLDAPI</a>.<br />
+  </p>
+  <p>
+    If you like what you see, be sure to check out <a href="https://github.com/RDFLib/VocPrez/">VocPrez</a> for vocabularies.
+  </p>
+</div>
+<div style="grid-column: 4; text-align: right;">
+  <p>
+    This catalogue is maintained by:<br />
+    <a href="https://surroundaustralia.com" style="font-family: sans-serif; text-decoration: none; font-weight: bold; color:#333;">
+      <img style="float:left; margin-right: 10px;" src="{{ url_for('static', filename='surround-logo-catprez.png') }}" alt="CatPrez Logo" />
+      SURROUND<br />
+      Australia
+    </a>
+  </p>
 </div>

@@ -57,10 +57,3 @@
 #    ] ;
     prof:isProfileOf <http://qudt.org> ;
 .
-
-
-<https://surroundaustralia.com>
-    a sdo:Organization ;
-    sdo:name "SURROUND Australia Pty Ltd" ;
-    sdo:url <https://surroundaustralia.com> ;
-.

@@ -1,0 +1,32 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX role: <http://www.w3.org/ns/dx/prof/role/>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://w3id.org/profile/provnull>
+  a prof:Profile ;
+  dcterms:identifier "provnull" ;
+  dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
+  dcterms:title "Null Profile of PROV-O"@en ;
+  dcterms:description "A profile of The Provenance Ontology, PROV-O, that imposes no restrictions - a null profile - that can be used to validate PROV-O conformance claims" ;
+  dcterms:creator <https://surroundaustralia.com> ;
+  dcterms:created "2020-09-10"^^xsd:date ;
+  dcterms:modified "2020-09-10"^^xsd:date ;
+  dcterms:publisher <https://surroundaustralia.com>  ;
+#  prof:hasResource [
+#      dcterms:title "Profile code repository"@en ;
+#      dcterms:description "Code repository storing all Profile artifacts"@en ;
+#      prof:hasArtifact <https://github.com/surroundaustralia/dcat2null-profile> ;
+#      prof:hasRole role:repository ;
+#  ] ,
+#  [
+#      dcterms:title "Validator in SHACL"@en ;
+#      dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
+#      dcterms:format "text/turtle" ;
+#      prof:hasArtifact <https://github.com/surroundaustralia/dcat2null-profile/blob/master/validator.ttl> ;
+#      prof:hasRole role:validation ;
+#  ] ;
+.

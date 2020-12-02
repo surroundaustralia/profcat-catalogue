@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://w3id.org/profile/chekatest>
+    a prof:Profile ;
+    dcterms:identifier "chekatest" ;
+    dcterms:created "2020-11-13"^^xsd:date ;
+    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:modified "2020-11-13"^^xsd:date ;
+    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:title "Cheka Test Profile"@en ;
+    dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
+    prof:hasResource [
+        dcterms:title "Profile code repository"@en ;
+        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        prof:hasArtifact <https://github.com/surroundaustralia/chekatest-profile> ;
+        prof:hasRole role:repository ;
+    ] ,
+    [
+        dcterms:title "Validator in SHACL"@en ;
+        dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
+        dcterms:format "text/turtle" ;
+        prof:hasArtifact <https://raw.githubusercontent.com/surroundaustralia/chekatest-profile/main/validator.ttl> ;
+        prof:hasRole role:validation ;
+    ] ;
+.
+
+
