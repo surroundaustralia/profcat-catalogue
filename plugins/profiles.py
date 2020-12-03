@@ -1,6 +1,6 @@
 import logging
-from rdflib import Graph, URIRef, Namespace
-from rdflib.namespace import DCAT, DCTERMS, PROF, RDF, SDO
+from rdflib import Graph, URIRef, Namespace, BNode
+from rdflib.namespace import DCAT, DCTERMS, PROF, RDF, SDO, SKOS
 from pyldapi.renderer import Renderer
 
 
@@ -14,6 +14,10 @@ def cache_expand(g: Graph):
     # for each prof:Profile in the cache, re-class it a dcat:Resource
     for s in g.subjects(predicate=RDF.type, object=PROF.Profile):
         g.add((s, RDF.type, DCAT.Resource))
+
+    # convert all tokens to identifiers
+    for s, o in g.subject_objects(predicate=PROF.hasToken):
+        g.add((s, DCTERMS.identifier, o))
 
     # infer that each prof:Profile instances prof:hasResource objects are prof:ResourceDescriptor instances
     for s, o in g.subject_objects(predicate=PROF.hasResource):
@@ -47,3 +51,23 @@ def cache_expand(g: Graph):
         for s in g.subjects(predicate=RDF.type, object=PROF.Profile):
             g.add((c, DCTERMS.hasPart, s))
 
+    # slot Profile into top of rendering order
+    RT = Namespace("https://w3id.org/profile/catprez/resourcetypes/")
+    for o in g.objects(subject=RT["rendering-order"], predicate=SKOS.memberList):
+        for o2 in g.objects(subject=o, predicate=RDF.first):
+            # remove existing first
+            g.remove((o, RDF.first, o2))
+
+            # add in new first
+            g.add((o, RDF.first, URIRef("http://www.w3.org/ns/dx/prof/Profile")))
+
+            # add in a new BN
+            b0 = BNode()
+            g.add((o, RDF.rest, b0))
+
+            # add former first to BN
+            g.add((b0, RDF.first, o2))
+
+            for o3 in g.objects(subject=o, predicate=RDF.rest):
+                # join new BN to rest
+                g.add((b0, RDF.rest, o3))

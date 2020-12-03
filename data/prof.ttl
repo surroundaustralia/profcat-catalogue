@@ -10,7 +10,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://www.w3.org/TR/dx-prof/>
 	a owl:Ontology , prof:Profile ;
-	dcterms:identifier "prof" ;
+	prof:hasToken "prof" ;
 	rdfs:label "The Profiles Ontology" ;
 	prof:isProfileOf owl: , dct: ;
     prof:hasResource _:1 , _:2 , _:3 , _:4 , _:5 ;

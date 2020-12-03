@@ -2,14 +2,14 @@
 {% block content %}
   <div id="title">
     <h1>{{ title}}</h1>
+    <h2><a href="{{ utils.get_content_uri(uri) }}">{{ uri }}</a></h2>
+    <h3>A <a title="A specification that constrains, extends, combines, or provides guidance or explanation about the usage of other specifications." href="http://www.w3.org/ns/dx/prof/Profile">Profile</a></h3>
   </div>
   <div id="maincontent">
     <div>
       {{ description|safe }}
     </div>
     <dl>
-      <dt>URI</dt>
-      <dd><a href="{{ utils.get_content_uri(uri) }}">{{ uri }}</a></dd>
       <dt>Created</dt>
       <dd>{{ created }}</dd>
       <dt>Modified</dt>

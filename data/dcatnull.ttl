@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/profile/dcat2null>
   a prof:Profile ;
-  dcterms:identifier "dcat2null" ;
+  prof:hasToken "dcat2null" ;
   dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
   dcterms:title "Null Profile of DCAT2"@en ;
   dcterms:description "A profile of DCAT (v2, or DCAT 2018) that imposes no restrictions - a null profile - that can be used to validate DCAT2 conformance claims" ;

@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/profile/skosnull>
     a prof:Profile ;
-    dcterms:identifier "skosnull" ;
+    prof:hasToken "skosnull" ;
     dcterms:created "2020-08-26"^^xsd:date ;
     dcterms:creator <https://surroundaustralia.com> ;
     dcterms:modified "2020-08-26"^^xsd:date ;

@@ -8,7 +8,7 @@
 
 <https://w3id.org/profile/chekatest>
     a prof:Profile ;
-    dcterms:identifier "chekatest" ;
+    prof:hasToken "chekatest" ;
     dcterms:created "2020-11-13"^^xsd:date ;
     dcterms:creator <https://surroundaustralia.com> ;
     dcterms:modified "2020-11-13"^^xsd:date ;

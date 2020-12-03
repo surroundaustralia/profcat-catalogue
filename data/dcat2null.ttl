@@ -8,7 +8,7 @@
 
 <https://w3id.org/profile/dcat2null>
     a prof:Profile ;
-    dcterms:identifier "dcat2null" ;
+    prof:hasToken "dcat2null" ;
     dcterms:created "2020-08-26"^^xsd:date ;
     dcterms:creator <https://surroundaustralia.com> ;
     dcterms:modified "2020-08-26"^^xsd:date ;

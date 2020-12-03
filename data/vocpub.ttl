@@ -8,7 +8,7 @@
 
 <https://w3id.org/profile/vocpub>
     a prof:Profile ;
-    dcterms:identifier "vocpub" ;
+    prof:hasToken "vocpub" ;
     dcterms:created "2020-06-25"^^xsd:date ;
     dcterms:creator <https://surroundaustralia.com> ;
     dcterms:modified "2020-06-25"^^xsd:date ;

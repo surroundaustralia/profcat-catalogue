@@ -8,7 +8,7 @@
 
 <https://www.w3.org/TR/2014/REC-vocab-dcat-20140116/>
     a prof:Profile ;
-    dcterms:identifier "dcat1" ;
+    prof:hasToken "dcat1" ;
     dcterms:title "DCAT, 2014"@en ;
     dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
     dcterms:creator <https://www.w3.org> ;

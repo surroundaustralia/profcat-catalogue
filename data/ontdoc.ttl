@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/profile/ontdoc>
     a prof:Profile ;
-    dcterms:identifier "ontdoc" ;
+    prof:hasToken "ontdoc" ;
     dcterms:created "2020-08-26"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ga> ;
     dcterms:modified "2020-08-26"^^xsd:date ;

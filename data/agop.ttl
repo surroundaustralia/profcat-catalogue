@@ -7,7 +7,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://linked.data.gov.au/def/agop>
     a prof:Profile ;
-    dcterms:identifier "agop" ;
+    prof:hasToken "agop" ;
     dcterms:title "Australian Government Ontology Profile"@en ;
     dcterms:description "A profile of OWL for the purposes of Australian Government ontology documentation and alignment."@en ;
     prof:isProfileOf <https://www.w3.org/TR/owl2-rdf-based-semantics/> ;  # OWL

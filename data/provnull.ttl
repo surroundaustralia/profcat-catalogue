@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/profile/provnull>
   a prof:Profile ;
-  dcterms:identifier "provnull" ;
+  prof:hasToken "provnull" ;
   dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
   dcterms:title "Null Profile of PROV-O"@en ;
   dcterms:description "A profile of The Provenance Ontology, PROV-O, that imposes no restrictions - a null profile - that can be used to validate PROV-O conformance claims" ;
