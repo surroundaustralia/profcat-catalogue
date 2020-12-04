@@ -41,9 +41,9 @@ class ProfileRenderer(ResourceRenderer):
             if str(p).startswith(PROF) or str(p).startswith(DCTERMS):
                 g.add((s, p, o))
 
-        for s2, p in self.data_source_graph.subject_predicates(s):
-            if str(p).startswith(PROF):
-                g.add((s2, p, s))
+        for p, o in self.data_source_graph.predicate_objects(subject=s):
+            if str(o).startswith(PROF):
+                g.add((s, p, o))
 
         for o in self.data_source_graph.objects(subject=s, predicate=PROF.hasResource):
             for p2, o2 in self.data_source_graph.predicate_objects(subject=o):
