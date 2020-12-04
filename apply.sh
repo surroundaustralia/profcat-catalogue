@@ -1,4 +1,4 @@
-source .ENV-local
+source .ENV
 
 echo "Apply styling"
 echo "copying $CP_THEME_HOME/style content to $CP_HOME/catprez/view/style"
