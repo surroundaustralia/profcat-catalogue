@@ -61,6 +61,7 @@ class ProfileRenderer(ResourceRenderer):
         publisher = None
         isProfileOf = []
         hasToken = None
+        resources = []
 
         s = URIRef(self.instance_uri)
         for p, o in self.data_source_graph.predicate_objects(subject=s):
@@ -86,6 +87,24 @@ class ProfileRenderer(ResourceRenderer):
                         isProfileOf.append((str(o), str(o2)))
                 elif p == PROF.hasToken:
                     hasToken = str(o)
+                elif p == PROF.hasResource:
+                    resource = {}
+                    for p2, o2 in self.data_source_graph.predicate_objects(subject=o):
+                        if p2 == DCTERMS.title:
+                            resource["title"] = str(o2)
+                        elif p2 == DCTERMS.description:
+                            resource["description"] = str(o2)
+                        elif p2 == DCTERMS.type:
+                            resource["type"] = str(o2)
+                            for o3 in self.data_source_graph.objects(subject=o2, predicate=DCTERMS.title):
+                                resource["type_title"] = str(o3)
+                        elif p2 == PROF.hasArtifact:
+                            resource["hasArtifact"] = str(o2)
+                        elif p2 == PROF.hasRole:
+                            resource["hasRole"] = str(o2)
+                            resource["hasRole_title"] = resource["hasRole"].split("/")[-1]
+
+                    resources.append(resource)
 
         if any(elem is None for elem in [self.instance_uri, title, publisher, hasToken]):
             return Response(
@@ -104,7 +123,8 @@ class ProfileRenderer(ResourceRenderer):
             "creator": creator,
             "publisher": publisher,
             "isProfileOf": isProfileOf,
-            "hasToken": hasToken
+            "hasToken": hasToken,
+            "resources": resources
         }
 
         return Response(

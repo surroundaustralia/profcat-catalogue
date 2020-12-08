@@ -39,6 +39,35 @@
       {% endfor %}
       </ul>
     {% endif %}
+    {% if resources|length > 0 %}
+      <h3>Resources</h3>
+      <style>
+        table#resources {
+            border-collapse: collapse;
+        }
+        table#resources tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table#resources td {
+            vertical-align: top;
+            padding: 5px;
+        }
+      </style>
+      <table id="resources">
+      {% for resource in resources %}
+          <tr>
+            <td>
+              <a href="{{ utils.get_content_uri(resource['hasArtifact']) }}">{{ resource['title'] }}</a>
+              {% if resource['hasRole'] is defined %}<br />
+                Role: <em><a href="{{ resource['hasRole'] }}">{{ resource['hasRole_title'] }}</em>
+              {% endif %}
+            </td>
+            <td><span title="{{ resource['type'] }}">{{ resource['type_title'] }}</span></td>
+          </tr>
+      {% endfor %}
+      </table>
+    {% endif %}
+    <p></p>
   </div>
   {% include '_altprofiles.html' %}
 {% endblock %}
