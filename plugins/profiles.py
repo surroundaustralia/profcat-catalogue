@@ -4,6 +4,8 @@ from rdflib.namespace import DCAT, DCTERMS, PROF, RDF, SDO, SKOS
 from pyldapi.renderer import Renderer
 
 
+# def cache_load()
+
 def cache_expand(g: Graph):
     """This is the ProfCat cache builder expansion: it creates dcat:Resources from prof:Profile classes for CatPrez
     """

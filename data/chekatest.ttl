@@ -25,7 +25,7 @@
         dcterms:title "Validator in SHACL"@en ;
         dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://raw.githubusercontent.com/surroundaustralia/chekatest-profile/main/validator.ttl> ;
+        prof:hasArtifact <https://raw.githack.com/surroundaustralia/chekatest-profile/main/validator.ttl> ;
         prof:hasRole role:validation ;
     ] ;
 .
