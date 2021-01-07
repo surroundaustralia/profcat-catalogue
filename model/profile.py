@@ -80,10 +80,13 @@ class ProfileRenderer(ResourceRenderer):
                     for o2 in self.data_source_graph.objects(subject=o, predicate=SDO.name):
                         publisher = (str(o), str(o2))
                 elif p == PROF.isProfileOf:
-                    isProfileOf.append(str(o))
                     # try and get the Profile's label
+                    got_label = False
                     for o2 in self.data_source_graph.objects(subject=o, predicate=DCTERMS.title):
                         isProfileOf.append((str(o), str(o2)))
+                        got_label = True
+                    if not got_label:
+                        isProfileOf.append(str(o))
                 elif p == PROF.hasResource:
                     resource = {}
                     for p2, o2 in self.data_source_graph.predicate_objects(subject=o):
