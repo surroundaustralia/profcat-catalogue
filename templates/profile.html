@@ -27,7 +27,7 @@
       <h3>Is Profile Of</h3>
       <ul>
       {% for ipo in isProfileOf %}
-        {% if isProfileOf is string %}
+        {% if ipo is string %}
           <li>
             <a href="{{ ipo }}">{{ ipo }}</a>
           </li>
