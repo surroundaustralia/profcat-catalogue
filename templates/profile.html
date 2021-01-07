@@ -27,7 +27,7 @@
       <h3>Is Profile Of</h3>
       <ul>
       {% for ipo in isProfileOf %}
-        {% if isProfileOf|length > 1 %}
+        {% if isProfileOf is tuple %}
           <li>
             <a href="{{ utils.get_content_uri(ipo[0]) }}">{{ ipo[1] }}</a>
           </li>
