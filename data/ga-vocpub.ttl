@@ -1,4 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix role: <http://www.w3.org/ns/dx/prof/role/> .
 @prefix sdo: <https://schema.org/> .
@@ -6,58 +7,59 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-<https://w3id.org/profile/vocpub>
+<https://linked.data.gov.au/def/ga-vocpub>
     a prof:Profile ;
     dcterms:created "2020-06-13"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/surround> ;
-    dcterms:modified "2020-06-15"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/surround> ;
-    skos:definition "This profile of SKOS defines what ConceptScheme, Concept and Collection properties and their relative arrangements Geoscience Australia requires of its vocabularies for its business purposes"@en ;
-    skos:prefLabel "VocPub profile of SKOS" ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:modified "2021-01-07"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ga> ;
+    skos:definition "This profile is Geoscience Australia's profile of the [Vocabulary Publications Profile](https://w3id.org/profile/vocpub) which, in turn, profiles the SKOS vocabulary data model. This profile adds rules for Geoscience Australia's business requirements on top of those already applied to SKOS use by the VocPub profile."@en ;
+    skos:prefLabel "GA VocPub Profile" ;
     prof:hasResource [
         skos:prefLabel "Specification Document"@en ;
         dcterms:conformsTo <https://www.w3.org/TR/html52/> ;
         dcterms:format "text/html" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/specification.html> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/ga-vocpub/specification.html> ;
         prof:hasRole role:specification
     ] ,
     [
         skos:prefLabel "Validator in SHACL"@en ;
         dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/validation.ttl> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/ga-vocpub/validation.ttl> ;
         prof:hasRole role:validation
     ] ,
     [
         skos:prefLabel "Example of a valid vocabulary"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/valid.ttl> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/ga-vocpub/examples/valid.ttl> ;
         prof:hasRole role:example
     ] ,
     [
         skos:prefLabel "Example of an invalid vocabulary"@en ;
         dcterms:description "This example vocabulary does not satisfy the Specification's Requirement 2.1.5"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/invalid.ttl> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/ga-vocpub/examples/invalid.ttl> ;
         prof:hasRole role:example
     ] ,
     [
         skos:prefLabel "Example of a second invalid vocabulary"@en ;
         dcterms:description "This example vocabulary does not satisfy the Specification's Requirements 2.3.1 & 2.3.2"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/valid.2.ttl> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/ga-vocpub/examples/valid.2.ttl> ;
         prof:hasRole role:example
     ] ,
     [
         skos:prefLabel "Profile code repository"@en ;
         dcterms:description "Code repository storing all Profile artifacts"@en ;
-        prof:hasArtifact <https://github.com/surroundaustralia/vocpub-profile> ;
+        prof:hasArtifact <https://github.com/surroundaustralia/ga-vocpub-profile> ;
         prof:hasRole role:repository
     ] ;
-    prof:isProfileOf <https://www.w3.org/TR/skos-reference/> ;
+    prof:isProfileOf <https://w3id.org/profile/vocpub> ;
+    owl:versionIRI <https://linked.data.gov.au/def/ga-vocpub/1.1> ;
 .
 
-<https://linked.data.gov.au/org/surround> a sdo:Organization ;
-    sdo:name "SURROUND Australia Pty Ltd" ;
-    sdo:url "https://surroundaustralia.com"^^xsd:anyURI ;
+<https://linked.data.gov.au/org/ga> a sdo:Organization ;
+    sdo:name "Geosceince Australia" ;
+    sdo:url "https://www.ga.gov.au"^^xsd:anyURI ;
 .
