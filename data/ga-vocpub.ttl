@@ -60,6 +60,6 @@
 .
 
 <https://linked.data.gov.au/org/ga> a sdo:Organization ;
-    sdo:name "Geosceince Australia" ;
+    sdo:name "Geoscience Australia" ;
     sdo:url "https://www.ga.gov.au"^^xsd:anyURI ;
 .

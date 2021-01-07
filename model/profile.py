@@ -60,7 +60,6 @@ class ProfileRenderer(ResourceRenderer):
         creator = None
         publisher = None
         isProfileOf = []
-        hasToken = None
         resources = []
 
         s = URIRef(self.instance_uri)
@@ -85,8 +84,6 @@ class ProfileRenderer(ResourceRenderer):
                     # try and get the Profile's label
                     for o2 in self.data_source_graph.objects(subject=o, predicate=DCTERMS.title):
                         isProfileOf.append((str(o), str(o2)))
-                elif p == PROF.hasToken:
-                    hasToken = str(o)
                 elif p == PROF.hasResource:
                     resource = {}
                     for p2, o2 in self.data_source_graph.predicate_objects(subject=o):
@@ -106,10 +103,10 @@ class ProfileRenderer(ResourceRenderer):
 
                     resources.append(resource)
 
-        if any(elem is None for elem in [self.instance_uri, title, publisher, hasToken]):
+        if any(elem is None for elem in [self.instance_uri, title, publisher]):
             return Response(
                 "The Profile you requested, {}, is missing Profile information and cannot be displayed. It must have"
-                "a URI, title, publisher and a token."
+                "a URI, title & a publisher."
                     .format(self.instance_uri),
                 headers=self.headers,
             )
@@ -123,7 +120,6 @@ class ProfileRenderer(ResourceRenderer):
             "creator": creator,
             "publisher": publisher,
             "isProfileOf": isProfileOf,
-            "hasToken": hasToken,
             "resources": resources
         }
 
