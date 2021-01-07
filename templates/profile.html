@@ -27,13 +27,13 @@
       <h3>Is Profile Of</h3>
       <ul>
       {% for ipo in isProfileOf %}
-        {% if isProfileOf is tuple %}
+        {% if isProfileOf is string %}
           <li>
-            <a href="{{ utils.get_content_uri(ipo[0]) }}">{{ ipo[1] }}</a>
+            <a href="{{ ipo }}">{{ ipo }}</a>
           </li>
         {% else %}
           <li>
-            <a href="{{ ipo }}">{{ ipo }}</a>
+            <a href="{{ utils.get_content_uri(ipo[0]) }}">{{ ipo[1] }}</a>
           </li>
         {% endif %}
       {% endfor %}
