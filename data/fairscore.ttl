@@ -10,9 +10,9 @@
     prof:hasToken "fairscore" ;
     a prof:Profile ;
     dcterms:created "2020-11-13"^^xsd:date ;
-    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:creator <https://linked.data.gov.au/org/surround> ;
     dcterms:modified "2020-11-13"^^xsd:date ;
-    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:publisher <https://linked.data.gov.au/org/surround> ;
     skos:definition "This profile is designed to communicate the [FAIR Principles](https://ardc.edu.au/resources/working-with-data/fair-data/) score of a [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web) information resource, sucha sa dataset, ontology, vocabulary etc."@en ;
     dcterms:title "FAIR Score Profile" ;
     prof:hasResource [

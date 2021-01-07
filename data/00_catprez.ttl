@@ -14,5 +14,5 @@ As a whole, this catalogue presents as a DCAT Dataset therefor this ways in whic
 
 When viewed as a *catalogue*, this catalogue lists the parts within it."""@en ;
     sdo:codeRepository <https://github.com/surroundaustralia/catprez-overlay-profcat> ;
-    dcterms:publisher <https://surroundaustralia.com>  ;
+    dcterms:publisher <https://linked.data.gov.au/org/surround>  ;
 .

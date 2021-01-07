@@ -12,10 +12,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dcterms:type <http://www.w3.org/ns/dx/prof/Profile> ;
   dcterms:title "Null Profile of DCAT2"@en ;
   dcterms:description "A profile of DCAT (v2, or DCAT 2018) that imposes no restrictions - a null profile - that can be used to validate DCAT2 conformance claims" ;
-  dcterms:creator <https://surroundaustralia.com> ;
+  dcterms:creator <https://linked.data.gov.au/org/surround> ;
   dcterms:created "2020-08-26"^^xsd:date ;
   dcterms:modified "2020-08-26"^^xsd:date ;
-  dcterms:publisher <https://surroundaustralia.com>  ;
+  dcterms:publisher <https://linked.data.gov.au/org/surround>  ;
   prof:hasResource [
       dcterms:title "Profile code repository"@en ;
       dcterms:description "Code repository storing all Profile artifacts"@en ;

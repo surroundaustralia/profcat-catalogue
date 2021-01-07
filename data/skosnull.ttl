@@ -10,9 +10,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a prof:Profile ;
     prof:hasToken "skosnull" ;
     dcterms:created "2020-08-26"^^xsd:date ;
-    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:creator <https://linked.data.gov.au/org/surround> ;
     dcterms:modified "2020-08-26"^^xsd:date ;
-    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:publisher <https://linked.data.gov.au/org/surround> ;
     dcterms:description "A profile of SKOS Core Vocabulary Specification that imposes no restrictions - this is a null profile"@en ;
     dcterms:title "Null Profile of SKOS Core Vocabulary Specification" ;
     prof:hasResource [

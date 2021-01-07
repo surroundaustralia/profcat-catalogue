@@ -10,9 +10,9 @@
     a prof:Profile ;
     prof:hasToken "chekatest" ;
     dcterms:created "2020-11-13"^^xsd:date ;
-    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:creator <https://linked.data.gov.au/org/surround> ;
     dcterms:modified "2020-11-13"^^xsd:date ;
-    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:publisher <https://linked.data.gov.au/org/surround> ;
     dcterms:title "Cheka Test Profile"@en ;
     dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
     prof:hasResource [

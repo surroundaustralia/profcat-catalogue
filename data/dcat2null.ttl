@@ -10,9 +10,9 @@
     a prof:Profile ;
     prof:hasToken "dcat2null" ;
     dcterms:created "2020-08-26"^^xsd:date ;
-    dcterms:creator <https://surroundaustralia.com> ;
+    dcterms:creator <https://linked.data.gov.au/org/surround> ;
     dcterms:modified "2020-08-26"^^xsd:date ;
-    dcterms:publisher <https://surroundaustralia.com> ;
+    dcterms:publisher <https://linked.data.gov.au/org/surround> ;
     skos:definition "A profile of DCAT2 that imposes no restrictions - this is a null profile"@en ;
     dcterms:title "Null Profile of DCAT2" ;
     prof:hasResource [
@@ -60,8 +60,8 @@
 .
 
 
-<https://surroundaustralia.com>
+<https://linked.data.gov.au/org/surround>
     a sdo:Organization ;
     sdo:name "SURROUND Australia Pty Ltd" ;
-    sdo:url <https://surroundaustralia.com> ;
+    sdo:url <https://linked.data.gov.au/org/surround> ;
 .
