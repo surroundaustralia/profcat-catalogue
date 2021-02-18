@@ -50,6 +50,17 @@ profile_sdo = Profile(
 #     default_language="en",
 # )
 
+profile_slist = Profile(
+    "https://w3id.org/profile/slist",
+    label="Catalogue Simple List",
+    comment="A simple JSON object containing basic catalogue mtadata and a list of the Resources it contains, "
+            "possibly pre-filtered.",
+    mediatypes=["application/json"],
+    default_mediatype="application/json",
+    languages=["en"],  # default 'en' only for now
+    default_language="en",
+)
+
 profile_prof = Profile(
     "https://www.w3.org/TR/dx-prof/",
     label="Profiles Vocabulary",

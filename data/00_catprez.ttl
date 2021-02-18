@@ -6,7 +6,7 @@ PREFIX sdo: <https://schema.org/>
 
 <https://w3id.org/profile>
     a catprez:CatPrez ;
-    dcat:servedBy <http://localhost:5000> ;
+    catprez:servedBy <http://localhost:5000> ;
     dcterms:title "W3ID Profiles Catalogue"@en ;
     dcterms:description """A catalogue of Profiles defined according to the Profiles Vocabulary. Also included are Standards (specifications) defined by the Dublin Core Terms vocabulary.
 
