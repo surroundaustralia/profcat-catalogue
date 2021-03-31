@@ -45,7 +45,7 @@ def cache_expand(g: Graph):
                 if str(o) in doc_types:
                     g.add((s, DCTERMS.type, SDO.DigitalDocument))
             if p == PROF.hasRole:
-                if o == ROLE.repository:
+                if o == ROLE["online-vcs-repo"]:
                     g.add((s, DCTERMS.type, URIRef("https://w3id.org/profile/catprez/OnlineVCSRepo")))
 
     # for each prof:Profile, ensure that it is added to the Catalogue
