@@ -9,6 +9,7 @@ ARG DATA_DIR=/var/www/catprez-profcat/data
 # CatPrez setup
 WORKDIR /var/www
 RUN mkdir /root/.ssh/
+# the followg key file is not contained in this repo
 COPY bbpl-nopass.pem /root/.ssh/id_rsa
 RUN chmod 700 /root/.ssh/id_rsa
 RUN touch /root/.ssh/known_hosts
