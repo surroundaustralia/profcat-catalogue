@@ -18,9 +18,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   dcterms:publisher <https://linked.data.gov.au/org/surround>  ;
   prof:hasResource [
       dcterms:title "Profile code repository"@en ;
-      dcterms:description "Code repository storing all Profile artifacts"@en ;
+      dcterms:description "Code online Version Control System repository storing all Profile artifacts"@en ;
       prof:hasArtifact <https://github.com/surroundaustralia/dcat2null-profile> ;
-      prof:hasRole role:repository ;
+      prof:hasRole role:online-vcs-repo ;
   ] ,
   [
       dcterms:title "Validator in SHACL"@en ;

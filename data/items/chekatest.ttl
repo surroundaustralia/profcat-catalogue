@@ -17,9 +17,9 @@
     dcterms:description "A profile desinged to be used for Cheka program testing. This profile provides a single resource, a SHACL validator to check for a void:Dataset's modified date" ;
     prof:hasResource [
         dcterms:title "Profile code repository"@en ;
-        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        dcterms:description "Code online Version Control System repository storing all Profile artifacts"@en ;
         prof:hasArtifact <https://github.com/surroundaustralia/chekatest-profile> ;
-        prof:hasRole role:repository ;
+        prof:hasRole role:online-vcs-repo ;
     ] ,
     [
         dcterms:title "Validator in SHACL"@en ;

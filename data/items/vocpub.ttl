@@ -8,6 +8,7 @@
 
 <https://w3id.org/profile/vocpub>
     a prof:Profile ;
+    prof:hasToken "vocpub" ;
     dcterms:created "2020-06-13"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/surround> ;
     dcterms:modified "2020-06-15"^^xsd:date ;
@@ -18,34 +19,34 @@
         skos:prefLabel "Specification Document"@en ;
         dcterms:conformsTo <https://www.w3.org/TR/html52/> ;
         dcterms:format "text/html" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/specification.html> ;
+        prof:hasArtifact <https://w3id.org/profile/vocpub/spec> ;
         prof:hasRole role:specification
     ] ,
     [
         skos:prefLabel "Validator in SHACL"@en ;
         dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/validation.ttl> ;
+        prof:hasArtifact <https://w3id.org/profile/vocpub/validator> ;
         prof:hasRole role:validation
     ] ,
     [
         skos:prefLabel "Example of a valid vocabulary"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/valid.ttl> ;
+        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/valid> ;
         prof:hasRole role:example
     ] ,
     [
         skos:prefLabel "Example of an invalid vocabulary"@en ;
-        dcterms:description "This example vocabulary does not satisfy the Specification's Requirement 2.1.5"@en ;
+        dcterms:description "This example vocabulary does not satisfy the Specification's Requirement 2.1.5 (the ConceptScheme is missing a dcterms:created date)"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/invalid.ttl> ;
+        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/invalid> ;
         prof:hasRole role:example
     ] ,
     [
         skos:prefLabel "Example of a second invalid vocabulary"@en ;
-        dcterms:description "This example vocabulary does not satisfy the Specification's Requirements 2.3.1 & 2.3.2"@en ;
+        dcterms:description "This example vocabulary does not satisfy the Specification's Requirements 2.3.1 & 2.3.2 (one Concept has two titles, another is missing rdfs:isDefinedBy)"@en ;
         dcterms:format "text/turtle" ;
-        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/valid.2.ttl> ;
+        prof:hasArtifact <https://w3id.org/profile/vocpub/examples/invalid-2> ;
         prof:hasRole role:example
     ] ,
     [
@@ -59,5 +60,5 @@
 
 <https://linked.data.gov.au/org/surround> a sdo:Organization ;
     sdo:name "SURROUND Australia Pty Ltd" ;
-    sdo:url "https://linked.data.gov.au/org/surround"^^xsd:anyURI ;
+    sdo:url "https://surroundaustralia.com"^^xsd:anyURI ;
 .

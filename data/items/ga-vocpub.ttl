@@ -51,9 +51,9 @@
     ] ,
     [
         skos:prefLabel "Profile code repository"@en ;
-        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        dcterms:description "Code online Version Control System repository storing all Profile artifacts"@en ;
         prof:hasArtifact <https://github.com/surroundaustralia/ga-vocpub-profile> ;
-        prof:hasRole role:repository
+        prof:hasRole role:online-vcs-repo
     ] ;
     prof:isProfileOf <https://w3id.org/profile/vocpub> ;
     owl:versionIRI <https://linked.data.gov.au/def/ga-vocpub/1.1> ;

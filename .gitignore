@@ -6,3 +6,9 @@
 
 # specific config
 ENV_VARS.sh
+
+.ENV*
+.env
+
+*.pem
+

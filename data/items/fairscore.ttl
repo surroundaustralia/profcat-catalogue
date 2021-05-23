@@ -31,9 +31,9 @@
 #    ] ,
     [
         dcterms:title "Profile code repository"@en ;
-        dcterms:description "Code repository storing all Profile artifacts"@en ;
+        dcterms:description "Code online Version Control System repository storing all Profile artifacts"@en ;
         prof:hasArtifact <https://github.com/surroundaustralia/dcat2-null-profile> ;
-        prof:hasRole role:repository ;
+        prof:hasRole role:online-vcs-repo ;
     ] ,
     [
         dcterms:title "OWL Schema"@en ;
